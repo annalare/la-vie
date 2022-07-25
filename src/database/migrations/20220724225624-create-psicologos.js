@@ -16,6 +16,7 @@ module.exports = {
       },
       email: {
         type: Sequelize.STRING(255),
+        unique: true,
       },
       senha: {
         type: Sequelize.STRING(255),
@@ -25,6 +26,7 @@ module.exports = {
       },
       status: {
         type: Sequelize.BOOLEAN,
+        defaultValue: 1,
       },
     });
   },

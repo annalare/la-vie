@@ -1,7 +1,6 @@
 "use strict";
 
 const sequelize = require("sequelize");
-
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable("atendimentos", {
@@ -24,6 +23,16 @@ module.exports = {
         references: {
           model: {
             tableName: "pacientes",
+          },
+          key: "id",
+        },
+      },
+      psicologo_id: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+          model: {
+            tableName: "psicologos",
           },
           key: "id",
         },

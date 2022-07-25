@@ -16,12 +16,14 @@ module.exports = {
       },
       email: {
         type: Sequelize.STRING,
+        unique: true,
       },
       data_nascimento: {
         type: Sequelize.DATEONLY,
       },
       status: {
         type: Sequelize.BOOLEAN,
+        defaultValue: 1,
       },
       psicologo_id: {
         type: Sequelize.INTEGER,
