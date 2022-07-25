@@ -1,6 +1,8 @@
 const express = require("express");
 const routes = express.Router();
 
-routes.get("/caio");
+routes.get("/", (req, res) => {
+  res.send("teste");
+});
 
 module.exports = routes;
