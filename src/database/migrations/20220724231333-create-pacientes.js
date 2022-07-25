@@ -20,6 +20,9 @@ module.exports = {
       data_nascimento: {
         type: Sequelize.DATEONLY,
       },
+      status: {
+        type: Sequelize.BOOLEAN,
+      },
       psicologo_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
