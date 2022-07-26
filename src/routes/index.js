@@ -2,6 +2,7 @@ const express = require("express");
 
 // importando o psicologosControler que esta no arquivo psicologosControler.js
 const psicologosControler = require("../controllers/psicologoControllers")
+const pacientesController = require('../controllers/pacientesController');
 
 const routes = express.Router();
 
@@ -19,5 +20,14 @@ routes.put("/psicologo/:id", psicologosControler.atualizarPsicologo)
 
 // criar uma rota para deletar psicologo usaremos o metodo delete: chamando o nosso psicologosControler e acessando o metodo deletarPsicologo
 routes.delete("/psicologo/:id", psicologosControler.deletarPsicologo)
+
+//crud pacientes
+
+routes.get("/pacientes", pacientesController.listarPacientes);
+routes.get("/pacientes/:id", pacientesController.listarPacientes);
+routes.post("/pacientes/criar", pacientesController.cadastrarPacientes);
+routes.delete("/pacientes/:id", pacientesController.deletarPacientes);
+routes.put("/pacientes/:id", pacientesController.atualizarPacientes);
+
 
 module.exports = routes;
