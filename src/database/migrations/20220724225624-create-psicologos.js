@@ -28,6 +28,12 @@ module.exports = {
         type: Sequelize.BOOLEAN,
         defaultValue: 1,
       },
+      createdAt: {
+        type: Sequelize.DATE,
+      },
+      updatedAt: {
+        type: Sequelize.DATE,
+      },
     });
   },
 
