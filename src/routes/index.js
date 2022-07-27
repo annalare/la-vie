@@ -3,6 +3,7 @@ const express = require("express");
 // importando o psicologosControler que esta no arquivo psicologosControler.js
 const psicologosControler = require("../controllers/psicologoControllers")
 const pacientesController = require('../controllers/pacientesController');
+const atendimentosController = require('../controllers/atendimentosController');
 
 const routes = express.Router();
 
@@ -28,6 +29,11 @@ routes.get("/pacientes/:id", pacientesController.listarPacientes);
 routes.post("/pacientes/criar", pacientesController.cadastrarPacientes);
 routes.delete("/pacientes/:id", pacientesController.deletarPacientes);
 routes.put("/pacientes/:id", pacientesController.atualizarPacientes);
+
+routes.get("/atendimentos", atendimentosController.listarAtendimentos);
+routes.get("/atendimentos/:id", atendimentosController.listarAtendimentos);
+routes.post("/atendimentos", atendimentosController.cadastraratendimentos);
+
 
 
 module.exports = routes;

@@ -25,16 +25,6 @@ module.exports = {
         type: Sequelize.BOOLEAN,
         defaultValue: 1,
       },
-      psicologo_id: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        references: {
-          model: {
-            tableName: "psicologos",
-          },
-          key: "id",
-        },
-      },
       createdAt: {
         type: Sequelize.DATE,
       },
