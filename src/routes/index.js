@@ -5,6 +5,7 @@ const psicologosControler = require("../controllers/psicologoControllers")
 const pacientesController = require('../controllers/pacientesController');
 const atendimentosController = require('../controllers/atendimentosController');
 const authController = require("../controllers/authController");
+const dashboardController = require("../controllers/dashboardController");
 const validadorDeLogin = require("../validators/login/validatorDeLogin");
 const validadorDeId = require("../validators/id/validadorDeId")
 const auth = require("../middlewares/auth");
@@ -45,5 +46,10 @@ routes.put("/pacientes/:id", validadorDeId, pacientesController.atualizarPacient
 routes.get("/atendimentos", atendimentosController.listarAtendimentos);
 routes.get("/atendimentos/:id", validadorDeId, atendimentosController.listarAtendimentos);
 routes.post("/atendimentos", auth, atendimentosController.cadastraratendimentos);
+
+routes.get("/dashboards/psicologos", dashboardController.totalPsicologos)
+routes.get("/dashboards/pacientes", dashboardController.totalPacientes);
+routes.get("/dashboards/atendimentos", dashboardController.totalAtendimentos);
+routes.get("/dashboards/media-atendimentos", dashboardController.mediaAtendimentos);
 
 module.exports = routes;
