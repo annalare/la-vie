@@ -3,8 +3,6 @@ const erroValidacao = require("./middlewares/erroValidacao");
 const db = require("./database");
 
 const routes = require("./routes");
-const requestLog = require("./middlewares/requestLog")
-
 // importando resquestLog para colocar ele de forma global para que ele possa ser acessado por todas as rotas, agora vou colocar ele antes do app.use(routes)
 const requestLog = require("./middlewares/requestLog")
 

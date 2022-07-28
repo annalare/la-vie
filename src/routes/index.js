@@ -8,14 +8,12 @@ const authController = require("../controllers/authController");
 const validadorDeLogin = require("../validators/login/validatorDeLogin");
 const validadorDeId = require("../validators/id/validadorDeId")
 const auth = require("../middlewares/auth");
-const validationPsicologo = require("../validators/psicologos/validationPsicologo");
-const validationPaciente = require("../validators/pacientes/validationPacientes");
 
 // importando a validação de psicologos para colocar ele de forma local, insira o validationPsicologo dentro da rota desejada antes do controller para poder validar as informações
-const validationPsicologo = require("../validations/psicologos/validationPsicologo")
+const validationPsicologo = require("../validators/psicologos/validationPsicologo")
 
 // importando a validação de pacientes para colocar ele de forma local, insira o validationPsicologo dentro da rota desejada antes do controller para poder validar as informações
-const validationPaciente = require("../validations/pacientes/validationPacientes")
+const validationPaciente = require("../validators/pacientes/validationPacientes")
 
 const routes = express.Router();
 
