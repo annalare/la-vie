@@ -11,3 +11,4 @@ module.exports = validate({
         data_nascimento: Joi.date().required()
     })
 })
+
