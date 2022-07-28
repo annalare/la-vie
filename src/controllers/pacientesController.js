@@ -53,10 +53,16 @@ const pacientesController = {
         
         try {
             const { id } = req.params;
+            const pacientes = await Pacientes.findByPk(id);
+
+            if (!pacientes) {
+               return res.status(404).json("Id não encontrado");
+            }
    
             await Pacientes.update({ status: 0 }, { where: { id } });
    
-            res.status(204).json("Deletado com Sucesso");
+            res.status(200).json("Deletado com Sucesso");
+
          } catch (error) {
             res.status(500).json(`ERRO: ${error}`);
          }
@@ -66,6 +72,13 @@ const pacientesController = {
         try {
             const dados = req.body;
             const { id } = req.params;
+
+            const pacientesId = await Pacientes.findByPk(id);
+
+            if (!pacientesId) {
+
+               return res.status(404).json("Id não encontrado");
+            }
    
             if (dados.email) {
                const checkEmail = await Pacientes.count({

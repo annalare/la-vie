@@ -33,7 +33,7 @@ const psicologosControler = {
       res.status(200).json(listaDePsicologo);
     } catch (error) {
       console.error(error);
-      res.status(500).json("Erro na lista");
+      res.status(500).json("Erro no servidor");
     }
   },
 
@@ -53,26 +53,40 @@ const psicologosControler = {
     try {
       const { id } = req.params;
       const { nome, email, senha, apresentacao } = req.body;
+      
+      const psicologo = await Psicologos.findByPk(id);
 
-      const psicologoAtualizado = await Psicologos.update(
-        {
-          nome,
-          email,
-          senha,
-          apresentacao,
-        },
-        {
-          where: {
-            id,
-          },
-        }
+      if (!psicologo) {
+         return res.status(404).json("Id não localizado");
+      }
+
+      const newSenhaAtualizada = bcrypt.hashSync(senha, 10);
+
+      await Psicologos.update(
+         {
+            nome,
+            email,
+            senha: newSenhaAtualizada,
+            apresentacao,
+         },
+         {
+            where: {
+               id,
+            },
+         }
       );
 
-      res.status(200).json("Psicologo Atualizado");
-    } catch (error) {
-      return res.status(400).json("Erro ao Atualizado");
-    }
-  },
+      const psicologoAtualizado = await Psicologos.findByPk(id);
+
+      res.status(200).json(psicologoAtualizado);
+      
+   } catch (error) {
+
+      console.error("Erro no servidor");
+      console.log(error);
+      res.status(500).json("Erro no servidor");
+   }
+},
 
   async deletarPsicologo(req, res) {
     try {
