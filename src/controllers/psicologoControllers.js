@@ -3,22 +3,34 @@
 // importar Psicologos.js que esta na pasta models
 const Psicologos = require("../models/Psicologos")
 
+// importando o bcrypt para criptografar a senha
+const bcrypt = require("bcryptjs")
+
 const psicologosControler = {
     // cadastrar Psicologo
     async cadastrarPsicologo(req, res) {
         try {
             const { nome, email, senha, apresentacao }  = req.body
 
+            // verificando se o email ja foi cadastrado
+            const checkEmail = await Psicologos.count( {where: {email} })
+            if(checkEmail) {
+                return res.status(400).json("Email ja cadastrado!")
+            }
+
+            // agora podemos gerar uma senha cryptografada para salvar
+            const newSenha = bcrypt.hashSync(senha, 10)
+
             const novoPsicologo = await Psicologos.create({
             nome,
             email,
-            senha, 
+            senha: newSenha, // vai receber a senha cryptografada
             apresentacao
             })
             res.status(201).json(novoPsicologo)
             
         } catch (error) {
-            res.status(400).json("Erro, Produto não cadastrado")
+            res.status(400).json("Erro, Psicologo não cadastrado")
             
         }
     },
@@ -36,21 +48,6 @@ const psicologosControler = {
         }
     },
 
-    /* listar psicologo pelo id e devolver um objeto com todas as informações
-    async showPsicologo (req, res){
-        try {
-            const findPsicologo = await Psicologos.findAll({
-            where: {
-                id: req.params.id
-            }})
-
-            res.status(200).json(findPsicologo);
-        } catch (err) {
-            res.status(404).json("Id não encontrado")
-        }
-    },
-    */
-
     // listar psicologo pelo id e devolver um objeto com todas as informações, com exceção da senha  
     async showPsicologo (req, res) {
 
@@ -62,10 +59,9 @@ const psicologosControler = {
             })
          
             res.status(200).json(findPsicologo)
-            
         } catch (error) {
-            res.error(404).json("Id não encontrado")
             
+            return res.error(404).json("Id não encontrado")
         } 
     },
 
@@ -74,7 +70,7 @@ const psicologosControler = {
 
         try {
             const { id } = req.params
-            const {nome, email, senha, apresentacao}  = req.body
+            const {nome, email, senha, apresentacao}  = req.body            
 
             const psicologoAtualizado = await Psicologos.update({
             nome,
@@ -110,7 +106,6 @@ const psicologosControler = {
             res.status(404).json("Id não encontrado")            
         }
     }
-
 }
 
 // o objeto psicologosControler precisa ser exportado
