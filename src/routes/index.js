@@ -13,7 +13,7 @@ const routes = express.Router();
 
 routes.post("/login", validadorDeLogin, authController.login);
 
-routes.post("/psicologos", auth, validationPsicologo, psicologosControler.cadastrarPsicologo);
+routes.post("/psicologos", validationPsicologo, psicologosControler.cadastrarPsicologo);
 routes.get("/psicologos", psicologosControler.listarPsicologo);
 routes.get("/psicologo/:id", validadorDeId, psicologosControler.showPsicologo);
 routes.put("/psicologo/:id", validationPsicologo, validadorDeId, psicologosControler.atualizarPsicologo);
@@ -21,7 +21,7 @@ routes.delete("/psicologo/:id", validadorDeId, psicologosControler.deletarPsicol
 
 routes.get("/pacientes", pacientesController.listarPacientes);
 routes.get("/pacientes/:id", validadorDeId, pacientesController.listarPacientes);
-routes.post("/pacientes/criar", auth, validationPaciente, pacientesController.cadastrarPacientes);
+routes.post("/pacientes/criar", validationPaciente, pacientesController.cadastrarPacientes);
 routes.delete("/pacientes/:id", validadorDeId, pacientesController.deletarPacientes);
 routes.put("/pacientes/:id",validadorDeId,pacientesController.atualizarPacientes);
 

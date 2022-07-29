@@ -79,7 +79,7 @@ const psicologosControler = {
       const psicologoAtualizado = await Psicologos.findByPk(id);
 
       res.status(200).json(psicologoAtualizado);
-      
+
    } catch (error) {
 
       console.error("Erro no servidor");
@@ -89,20 +89,24 @@ const psicologosControler = {
 },
 
   async deletarPsicologo(req, res) {
+
     try {
-      const { id } = req.params;
+            const { id } = req.params;
+            const psicologos = await Psicologos.findByPk(id);
 
-      await Psicologos.destroy({
-        where: {
-          id,
-        },
-      });
+            if (!psicologos) {
+               return res.status(404).json("Id não encontrado");
+            }
+   
+            await Psicologos.update({ status: 0 }, { where: { id } });
+   
+            res.status(200).json("Deletado com Sucesso");
 
-      res.json("Psicologo deletado");
-    } catch (error) {
-      res.status(404).json("Id não encontrado");
-    }
-  },
+         } catch (error) {
+
+            res.status(500).json(`Deletado com Sucesso`);
+         }
+      },
 };
 
 module.exports = psicologosControler;
