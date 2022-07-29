@@ -11,27 +11,27 @@
 
 ---
 
-##    Descrição das Funcionalidades
+##  :mortar_board:  Descrição das Funcionalidades
 
 - Pacientes:
-<br>
 Foi feito um CRUD simples que pode ser observado da documentação
+<br>
 
 - Psicólogos:
-<br>
 No CRUD feito para os psicólocos foi utilizado o pacote bcrypt que é responsável pela encryptação da senha tanto na hora de fazer  o cadastro  quanto na utilização da senha!
+<br>
 
 - Login do psicólogo:
-<br>
 No login é feito uma autenticação de email e senha que tem como resposta um token gerado pelo JWT com as informações do psicólogo.
+<br>
 
 - Atendimentos:
-<br>
 Para criação do atendimento é necessário uma autorização. Essa autorização é feita pelo token.
+<br>
 
 - Dashboard:
-<br>
 O Dashboard vai trazer uma listagem de  informações mais simples, como número psicólogos, pacientes, atendimentos e a media entre atendimentos e psicólogos.
+<br>
 
 ---
 
