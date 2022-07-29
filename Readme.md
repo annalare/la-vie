@@ -49,6 +49,14 @@
 [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=La-Vie&uri=https%3A%2F%2Fgithub.com%2Fannalare%2Fla-vie%2Fblob%2Fmain%2Fdocs%2Finsomnia.json)
 
 ---
+---
+## :floppy_disk: Banco de dados
+
+Para o processo de criação do banco de dados, utilizamos migrations, porém desenhamos antes os models</br>
+
+![Img](https://i.imgur.com/WiPYace.png)
+
+---
 
 ## 🛠 Tecnologias
 
