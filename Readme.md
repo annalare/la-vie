@@ -43,12 +43,13 @@
 - Put/Editar
 - Delete/Soft Delete
 - Dashboard
-
+---
+<div align="center">
    <h2> <a href="https://documenter.getpostman.com/view/21642376/UzXRRayc" > API La Vie</a>  </h2>
 
 [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=La-Vie&uri=https%3A%2F%2Fgithub.com%2Fannalare%2Fla-vie%2Fblob%2Fmain%2Fdocs%2Finsomnia.json)
+</div>
 
----
 ---
 ## :floppy_disk: Banco de dados
 
@@ -82,13 +83,13 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <table align=center>
   <tr>
 
-   <td> <a href="https://www.linkedin.com/in/annalare/"> Ana Larissa </a>
+   <td align="center"> <img src="https://avatars.githubusercontent.com/u/83883968?v=4" width=175/></br><a href="https://www.linkedin.com/in/annalare/"> Ana Larissa </a>
    </td>
-   <td> <a href="https://www.linkedin.com/in/caiodocarmo/"> Caio Do Carmo </a>
+   <td align="center"> <img src="https://avatars.githubusercontent.com/u/84113028?v=4"  width=175/></br><a href="https://www.linkedin.com/in/caiodocarmo/"> Caio Do Carmo </a>
    </td>
-    <td> <a href="https://www.linkedin.com/in/peh-arruda/"> Pedro Arruda </a>
+    <td align="center"> <img src="https://avatars.githubusercontent.com/u/73722723?v=4" width=175/></br><a href="https://www.linkedin.com/in/peh-arruda/"> Pedro Arruda </a>
    </td>
-    <td> <a href="https://www.linkedin.com/in/raphael-anizio-da-silva-0173211b8/"> Raphael Anízio </a>
+    <td align="center"> <img src="https://avatars.githubusercontent.com/u/96752946?v=4" width=175/> </br><a href="https://www.linkedin.com/in/raphael-anizio-da-silva-0173211b8/"> Raphael Anízio </a>
    </td>
    
   </tr>
