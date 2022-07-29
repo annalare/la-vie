@@ -44,7 +44,7 @@ O Dashboard vai trazer uma listagem de  informações mais simples, como número
   - Delete/Soft Delete
   - Dashboard
 
-   <h2 align=center> <a src="./" > Link da nossa API </a>  </h2>
+   <h2 align=center> <a src="./" > API La Vie</a>  </h2>
 
 [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=La-Vie&uri=file%3A%2F%2F%2FC%3A%2FUsers%2FCaio%2FDesktop%2FInsomnia_2022-07-28.json)
 
@@ -78,13 +78,13 @@ As seguintes ferramentas foram usadas na construção do projeto: <br>
 <table align=center>
   <tr>
 
-   <td> <a src="https://www.linkedin.com/in/annalare/"> Ana Larissa </a>
+   <td> <a href="https://www.linkedin.com/in/annalare/"> Ana Larissa </a>
    </td>
-   <td> <a src="https://www.linkedin.com/in/caiodocarmo/"> Caio Do Carmo </a>
+   <td> <a href="https://www.linkedin.com/in/caiodocarmo/"> Caio Do Carmo </a>
    </td>
-    <td> <a src="https://www.linkedin.com/in/peh-arruda/"> Pedro Arruda </a>
+    <td> <a href="https://www.linkedin.com/in/peh-arruda/"> Pedro Arruda </a>
    </td>
-    <td> <a src="https://www.linkedin.com/in/raphael-anizio-da-silva-0173211b8/"> Raphael Anízio </a>
+    <td> <a href="https://www.linkedin.com/in/raphael-anizio-da-silva-0173211b8/"> Raphael Anízio </a>
    </td>
    
   </tr>
