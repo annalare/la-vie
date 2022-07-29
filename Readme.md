@@ -44,10 +44,10 @@
 - Delete/Soft Delete
 - Dashboard
 
-   <h2 align=center> <a href="https://documenter.getpostman.com/view/21642376/UzXRRayc" > API La Vie</a>  </h2>
+   <h2> <a href="https://documenter.getpostman.com/view/21642376/UzXRRayc" > API La Vie</a>  </h2>
 
-<div align=center>[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=La-Vie&uri=https%3A%2F%2Fgithub.com%2Fannalare%2Fla-vie%2Fblob%2Fmain%2Fdocs%2Finsomnia.json)
-</div>
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=La-Vie&uri=https%3A%2F%2Fgithub.com%2Fannalare%2Fla-vie%2Fblob%2Fmain%2Fdocs%2Finsomnia.json)
+
 ---
 
 ## 🛠 Tecnologias
