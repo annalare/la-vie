@@ -2,55 +2,51 @@
 
 <img src="./docs/Logo LaVie.jpeg" alt="Logo da Clínica">
 
-## 💻 Sobre o projeto 
+## 💻 Sobre o projeto
+
 <br>
+- Neste projeto foi feito uma API para criar registros de psicólogos, pacientes e seus prontuários de uma clínica de saúde mental
 
- - Neste projeto foi feito uma API para criar registros de psicólogos, pacientes e seus prontuários de uma clínica de saúde mental
-
- - Projeto desenvolvido durante o desafio **Hands On** oferecido pela **Gama Academy**.
+- Projeto desenvolvido durante o desafio **Hands On** oferecido pela **Gama Academy**.
 
 ---
 
-##  :mortar_board:  Descrição das Funcionalidades
+## :mortar_board: Descrição das Funcionalidades
 
 - Pacientes:
-Foi feito um CRUD simples que pode ser observado da documentação
-<br>
+  Foi feito um CRUD simples que pode ser observado da documentação
+  <br>
 
 - Psicólogos:
-No CRUD feito para os psicólocos foi utilizado o pacote bcrypt que é responsável pela encryptação da senha tanto na hora de fazer  o cadastro  quanto na utilização da senha!
-<br>
+  No CRUD feito para os psicólocos foi utilizado o pacote bcrypt que é responsável pela encryptação da senha tanto na hora de fazer o cadastro quanto na utilização da senha!
+  <br>
 
 - Login do psicólogo:
-No login é feito uma autenticação de email e senha que tem como resposta um token gerado pelo JWT com as informações do psicólogo.
-<br>
+  No login é feito uma autenticação de email e senha que tem como resposta um token gerado pelo JWT com as informações do psicólogo.
+  <br>
 
 - Atendimentos:
-Para criação do atendimento é necessário uma autorização. Essa autorização é feita pelo token.
-<br>
+  Para criação do atendimento é necessário uma autorização. Essa autorização é feita pelo token.
+  <br>
 
 - Dashboard:
-O Dashboard vai trazer uma listagem de  informações mais simples, como número psicólogos, pacientes, atendimentos e a media entre atendimentos e psicólogos.
-<br>
+  O Dashboard vai trazer uma listagem de informações mais simples, como número psicólogos, pacientes, atendimentos e a media entre atendimentos e psicólogos.
+  <br>
 
 ---
 
-## :file_folder: Funcionalidades da API  
+## :file_folder: Funcionalidades da API
 
-  - Post/Login
-  - Get/Listar
-  - Post/Cadastrar
-  - Put/Editar
-  - Delete/Soft Delete
-  - Dashboard
+- Post/Login
+- Get/Listar
+- Post/Cadastrar
+- Put/Editar
+- Delete/Soft Delete
+- Dashboard
 
-   <h2 align=center> <a src="./" > API La Vie</a>  </h2>
+   <h2 align=center> <a href="https://documenter.getpostman.com/view/21642376/UzXRRayc" > API La Vie</a>  </h2>
 
 [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=La-Vie&uri=https%3A%2F%2Fgithub.com%2Fannalare%2Fla-vie%2Fblob%2Fmain%2Fdocs%2Finsomnia.json)
-
----
-
-## 🚀 Como executar o projeto
 
 ---
 
@@ -72,7 +68,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ---
 
-<h2> 👨‍💻 Contribuidores </h2><br> 
+<h2> 👨‍💻 Contribuidores </h2><br>
 
 <h2>
 <table align=center>
@@ -91,7 +87,3 @@ As seguintes ferramentas foram usadas na construção do projeto:
 </table> </h2>
 
 ---
-
-## 📝 Licença
-
-Este projeto esta sobe a licença [MIT](./LICENSE).
