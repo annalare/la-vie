@@ -46,7 +46,7 @@ O Dashboard vai trazer uma listagem de  informações mais simples, como número
 
    <h2 align=center> <a src="./" > API La Vie</a>  </h2>
 
-[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=La-Vie&uri=file%3A%2F%2F%2FC%3A%2FUsers%2FCaio%2FDesktop%2FInsomnia_2022-07-28.json)
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=La-Vie&uri=file%3A%2F%2F%2FC%3A%2FUsers%2FCaio%2FDownloads%2FInsomnia_2022-07-28.json)
 
 ---
 
@@ -56,8 +56,8 @@ O Dashboard vai trazer uma listagem de  informações mais simples, como número
 
 ## 🛠 Tecnologias
 
-As seguintes ferramentas foram usadas na construção do projeto: <br>
-<br>
+As seguintes ferramentas foram usadas na construção do projeto:
+<br><br>
 
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" width="52" alt="javascript logo"  />
